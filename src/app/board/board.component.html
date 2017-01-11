@@ -1,0 +1,15 @@
+<table>
+  <tr *ngRepeat="let row upTo rows">
+    <td *ngRepeat="let column upTo columns">
+      {{row * columns + column + 1}}
+    </td>
+  </tr>
+</table>
+
+<!--template bindings={
+  "ng-reflect-ng-repeat-up-to": "3"
+}-->
+
+<!--<template [ngRepeatUpTo]="rows">
+
+</template>-->
